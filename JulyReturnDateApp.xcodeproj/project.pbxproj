@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594E9FF20EDE6A300071E87 /* AppDelegate.swift */; };
-		C594EA0220EDE6A300071E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA0120EDE6A300071E87 /* ViewController.swift */; };
-		C594EA0520EDE6A300071E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0320EDE6A300071E87 /* Main.storyboard */; };
+		C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA0120EDE6A300071E87 /* TeamViewController.swift */; };
+		C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */; };
 		C594EA0720EDE6A400071E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0620EDE6A400071E87 /* Assets.xcassets */; };
 		C594EA0A20EDE6A400071E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0820EDE6A400071E87 /* LaunchScreen.storyboard */; };
 		C594EA1520EDE6A500071E87 /* JulyReturnDateAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA1420EDE6A500071E87 /* JulyReturnDateAppTests.swift */; };
+		C594EA2320EDE7AB00071E87 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA2220EDE7AB00071E87 /* Team.swift */; };
+		C594EA2620EDE91500071E87 /* Bundle+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA2520EDE91500071E87 /* Bundle+JSON.swift */; };
+		C594EA2920EDE9BA00071E87 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = C594EA2820EDE9BA00071E87 /* teams.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +31,17 @@
 /* Begin PBXFileReference section */
 		C594E9FC20EDE6A300071E87 /* JulyReturnDateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JulyReturnDateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C594E9FF20EDE6A300071E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C594EA0120EDE6A300071E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C594EA0420EDE6A300071E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C594EA0120EDE6A300071E87 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		C594EA0420EDE6A300071E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TeamViewController.storyboard; sourceTree = "<group>"; };
 		C594EA0620EDE6A400071E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C594EA0920EDE6A400071E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C594EA0B20EDE6A400071E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C594EA1020EDE6A500071E87 /* JulyReturnDateAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JulyReturnDateAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C594EA1420EDE6A500071E87 /* JulyReturnDateAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JulyReturnDateAppTests.swift; sourceTree = "<group>"; };
 		C594EA1620EDE6A500071E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C594EA2220EDE7AB00071E87 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		C594EA2520EDE91500071E87 /* Bundle+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+JSON.swift"; sourceTree = "<group>"; };
+		C594EA2820EDE9BA00071E87 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,12 @@
 		C594E9FE20EDE6A300071E87 /* JulyReturnDateApp */ = {
 			isa = PBXGroup;
 			children = (
+				C594EA2720EDE9A400071E87 /* Assets */,
 				C594E9FF20EDE6A300071E87 /* AppDelegate.swift */,
-				C594EA0120EDE6A300071E87 /* ViewController.swift */,
-				C594EA0320EDE6A300071E87 /* Main.storyboard */,
-				C594EA0620EDE6A400071E87 /* Assets.xcassets */,
-				C594EA0820EDE6A400071E87 /* LaunchScreen.storyboard */,
+				C594EA2420EDE90500071E87 /* Extensions */,
 				C594EA0B20EDE6A400071E87 /* Info.plist */,
+				C594EA2120EDE78C00071E87 /* Models */,
+				C594EA1F20EDE6EF00071E87 /* ViewControllers */,
 			);
 			path = JulyReturnDateApp;
 			sourceTree = "<group>";
@@ -94,6 +100,49 @@
 				C594EA1620EDE6A500071E87 /* Info.plist */,
 			);
 			path = JulyReturnDateAppTests;
+			sourceTree = "<group>";
+		};
+		C594EA1F20EDE6EF00071E87 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C594EA2020EDE70600071E87 /* Team */,
+				C594EA0820EDE6A400071E87 /* LaunchScreen.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C594EA2020EDE70600071E87 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				C594EA0120EDE6A300071E87 /* TeamViewController.swift */,
+				C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		C594EA2120EDE78C00071E87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C594EA2220EDE7AB00071E87 /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C594EA2420EDE90500071E87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C594EA2520EDE91500071E87 /* Bundle+JSON.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C594EA2720EDE9A400071E87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C594EA0620EDE6A400071E87 /* Assets.xcassets */,
+				C594EA2820EDE9BA00071E87 /* teams.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +226,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C594EA2920EDE9BA00071E87 /* teams.json in Resources */,
 				C594EA0A20EDE6A400071E87 /* LaunchScreen.storyboard in Resources */,
 				C594EA0720EDE6A400071E87 /* Assets.xcassets in Resources */,
-				C594EA0520EDE6A300071E87 /* Main.storyboard in Resources */,
+				C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C594EA0220EDE6A300071E87 /* ViewController.swift in Sources */,
+				C594EA2320EDE7AB00071E87 /* Team.swift in Sources */,
+				C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */,
 				C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */,
+				C594EA2620EDE91500071E87 /* Bundle+JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,12 +273,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C594EA0320EDE6A300071E87 /* Main.storyboard */ = {
+		C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C594EA0420EDE6A300071E87 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TeamViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		C594EA0820EDE6A400071E87 /* LaunchScreen.storyboard */ = {
@@ -367,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.JulyReturnDateApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.JulyReturnDateApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
