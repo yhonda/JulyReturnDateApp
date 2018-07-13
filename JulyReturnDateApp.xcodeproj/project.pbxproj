@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A48797B20F89C9E00EB8BA5 /* TeamCViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A48797A20F89C9E00EB8BA5 /* TeamCViewController.storyboard */; };
+		0A48797D20F89CAB00EB8BA5 /* TeamCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48797C20F89CAB00EB8BA5 /* TeamCViewController.swift */; };
+		0A48798020F89D3000EB8BA5 /* TeamCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48797F20F89D3000EB8BA5 /* TeamCTableViewCell.swift */; };
+		0A48798220F89E7700EB8BA5 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A48798120F89E7700EB8BA5 /* teams.json */; };
 		C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594E9FF20EDE6A300071E87 /* AppDelegate.swift */; };
 		C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C594EA0120EDE6A300071E87 /* TeamViewController.swift */; };
 		C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C594EA0320EDE6A300071E87 /* TeamViewController.storyboard */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A48797A20F89C9E00EB8BA5 /* TeamCViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamCViewController.storyboard; sourceTree = "<group>"; };
+		0A48797C20F89CAB00EB8BA5 /* TeamCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCViewController.swift; sourceTree = "<group>"; };
+		0A48797F20F89D3000EB8BA5 /* TeamCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCTableViewCell.swift; sourceTree = "<group>"; };
+		0A48798120F89E7700EB8BA5 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		C594E9FC20EDE6A300071E87 /* JulyReturnDateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JulyReturnDateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C594E9FF20EDE6A300071E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C594EA0120EDE6A300071E87 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A48797920F89C6400EB8BA5 /* TeamC */ = {
+			isa = PBXGroup;
+			children = (
+				0A48797A20F89C9E00EB8BA5 /* TeamCViewController.storyboard */,
+				0A48797C20F89CAB00EB8BA5 /* TeamCViewController.swift */,
+			);
+			path = TeamC;
+			sourceTree = "<group>";
+		};
+		0A48797E20F89D1D00EB8BA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A48797F20F89D3000EB8BA5 /* TeamCTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C594E9F320EDE6A300071E87 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,7 @@
 		C594E9FE20EDE6A300071E87 /* JulyReturnDateApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A48797E20F89D1D00EB8BA5 /* View */,
 				C594EA2720EDE9A400071E87 /* Assets */,
 				C594E9FF20EDE6A300071E87 /* AppDelegate.swift */,
 				C594EA2420EDE90500071E87 /* Extensions */,
@@ -105,6 +131,7 @@
 		C594EA1F20EDE6EF00071E87 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A48797920F89C6400EB8BA5 /* TeamC */,
 				C594EA2020EDE70600071E87 /* Team */,
 				C594EA0820EDE6A400071E87 /* LaunchScreen.storyboard */,
 			);
@@ -124,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C594EA2220EDE7AB00071E87 /* Team.swift */,
+				0A48798120F89E7700EB8BA5 /* teams.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,10 +254,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A48797B20F89C9E00EB8BA5 /* TeamCViewController.storyboard in Resources */,
 				C594EA2920EDE9BA00071E87 /* teams.json in Resources */,
 				C594EA0A20EDE6A400071E87 /* LaunchScreen.storyboard in Resources */,
 				C594EA0720EDE6A400071E87 /* Assets.xcassets in Resources */,
 				C594EA0520EDE6A300071E87 /* TeamViewController.storyboard in Resources */,
+				0A48798220F89E7700EB8BA5 /* teams.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A48797D20F89CAB00EB8BA5 /* TeamCViewController.swift in Sources */,
 				C594EA2320EDE7AB00071E87 /* Team.swift in Sources */,
+				0A48798020F89D3000EB8BA5 /* TeamCTableViewCell.swift in Sources */,
 				C594EA0220EDE6A300071E87 /* TeamViewController.swift in Sources */,
 				C594EA0020EDE6A300071E87 /* AppDelegate.swift in Sources */,
 				C594EA2620EDE91500071E87 /* Bundle+JSON.swift in Sources */,

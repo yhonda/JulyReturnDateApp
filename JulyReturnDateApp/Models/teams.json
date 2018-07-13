@@ -1,0 +1,16 @@
+{
+    "teams" : [
+                         {
+                         "name": "TeamA",
+                         "method" : "transitTeamAViewController"
+                         },
+                         {
+                         "name": "TeamB",
+                         "method" : "transitTeamBViewController"
+                         },
+                         {
+                         "name": "TeamC",
+                         "method" : "transitTeamCViewController"
+                         }
+                         ]
+}
