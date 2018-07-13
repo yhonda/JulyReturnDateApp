@@ -12,6 +12,8 @@ final class TeamViewController: UITableViewController {
     /// チーム一覧
     let teams = Team.fetchTeams()
     
+    var members = [Team]()
+    
     //MARK : - LifeCycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,10 @@ extension TeamViewController {
     }
 
     @objc private func transitTeamCViewController() {
-        //TODO  : チームC
+        guard let teamCViewController = UIStoryboard(name: "TeamCViewController", bundle: nil).instantiateViewController(withIdentifier: "teamC") as? TeamCViewController else {
+            fatalError()
+        }
+        navigationController?.pushViewController(teamCViewController, animated: true)
     }
+    
 }
